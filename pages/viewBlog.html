@@ -3,129 +3,250 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
   <link rel="stylesheet"  href="../styles/viewBlog.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-  <title>Car Website</title>
-  
+  <title>BBMotors Blog</title>
 </head>
 <body>
-    <nav>
-        <div class="logo">
-            <a href="#">BBM.</a>
-        </div>
-        <ul>
-            <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="listings.html">Listings</a></li>
-            <li><a href="viewBlog.html">Blog</a></li>
-            <li><a href="contactUs.html">Contact</a></li>
+  <nav class="navbar navbar-expand-lg navbar-dark custom-nav sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">BBM.</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto me-lg-4">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="listings.html">Listings</a></li>
+          <li class="nav-item"><a class="nav-link active" href="viewBlog.html">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="contactUs.html">Contact</a></li>
         </ul>
-        <div class="button">
-            <button>Sign Up</button>
-            <button>Log In</button>
+        <div class="d-flex gap-2 mt-3 mt-lg-0">
+          <a class="btn btn-outline-light btn-sm px-3" href="signUp.html">Sign Up</a>
+          <a class="btn btn-light btn-sm px-3" href="signIn.html">Log In</a>
         </div>
-    </nav>
-    <div class="banner">
-        <h1>Blogs</h1>
-        <p>Keep up to date with current and future advances in the auotmotive industry with our detailed news section</p>
+      </div>
     </div>
+  </nav>
 
-    
-    <section class="secondary-featured-posts">
-        <div class="container">
-            <div class="card">
-                <div class="card-content">
-                    <h3 class="mb-0">Fuel Tips</h3>
-                    <div class="date"><p style="font: italic; color: gray;">posted Oct 11 2022</p></div>
-                    <p class="passage">Keep careful check on your fuel economy. If something is amiss with your car, usually the first place it will reveal itself is with poorer fuel economy..</p>
-                    <a href="#" class="stretched-link">Continue reading...</a>
+  <header class="hero-banner text-white">
+    <div class="container position-relative">
+      <p class="text-uppercase small text-warning mb-2">Feature Spotlight</p>
+      <h1 class="display-5 fw-semibold">Stories that celebrate automotive craftsmanship</h1>
+      <p class="lead text-white-50 mb-4 col-lg-8">Ride along with our editors as we uncover the engineering breakthroughs, design icons, and people shaping the next era of mobility.</p>
+      <div class="d-flex flex-wrap align-items-center gap-3">
+        <a href="#top-stories" class="btn btn-warning px-4 rounded-pill">Browse stories</a>
+        <div class="d-flex align-items-center gap-2 text-white-50">
+          <span class="badge bg-light text-dark">Weekly Digest</span>
+          <small>New deep dives every Monday</small>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="top-stories" class="py-5">
+      <div class="container">
+        <div class="d-flex flex-wrap justify-content-between align-items-center mb-4">
+          <h2 class="section-title mb-3 mb-lg-0">Top Stories</h2>
+          <a href="#" class="btn btn-outline-light btn-sm rounded-pill">View all articles</a>
+        </div>
+        <div class="row g-4">
+          <div class="col-lg-6">
+            <article class="card story-card h-100">
+              <div class="ratio ratio-16x9 card-img-top overflow-hidden">
+                <img src="../assets/images/rollsblog.jpeg" alt="Rolls Royce feature" class="img-fluid">
+              </div>
+              <div class="card-body">
+                <div class="story-meta">
+                  <span class="badge bg-warning-subtle text-dark text-uppercase">Luxury</span>
+                  <small>Nov 10, 2024 · 6 min read</small>
                 </div>
-                <div class="card-image">
-                    <img src="../assets/images/fuelblog.jpeg" alt="Post Thumbnail 1">
+                <h3 class="card-title">Inside the bespoke theater of the Phantom Series II</h3>
+                <p class="card-text text-white-50">How Rolls‑Royce reengineered silence and comfort to craft the definitive chauffeur experience.</p>
+                <a href="#" class="stretched-link text-decoration-none fw-semibold">Continue reading</a>
+              </div>
+            </article>
+          </div>
+          <div class="col-lg-6 d-flex flex-column gap-4">
+            <article class="card story-card flex-lg-row h-100">
+              <div class="ratio ratio-16x9 flex-shrink-0">
+                <img src="../assets/images/mercedezblog.jpeg" alt="Maybach detail" class="img-fluid">
+              </div>
+              <div class="card-body">
+                <div class="story-meta">
+                  <span class="badge bg-info-subtle text-dark text-uppercase">Design</span>
+                  <small>Nov 02, 2024 · 4 min read</small>
                 </div>
-            </div>
-            <div class="card">
-                <div class="card-content">
-                    <h3 class="mb-0">Safety First</h3>
-                    <div class="date"><p style="font: italic; color: gray;">posted Nov 11 2023</p></div>
-                    <p class="passage">In this article, we’re going to take a look at 11 helpful road safety tips that every driver can use, so you can feel secure behind the wheel on your next drive.</p>
-                    <a href="#" class="stretched-link">Continue reading...</a>
+                <h3 class="card-title h4">Maybach S-Class: redefining private lounges</h3>
+                <p class="card-text text-white-50">Ambient lighting tricks, hand-finished veneers, and serenity tech that rival first-class cabins.</p>
+                <a href="#" class="stretched-link text-decoration-none fw-semibold">Dive in</a>
+              </div>
+            </article>
+            <article class="card story-card flex-lg-row h-100">
+              <div class="ratio ratio-16x9 flex-shrink-0">
+                <img src="../assets/images/bmwblog.jpeg" alt="BMW i7" class="img-fluid">
+              </div>
+              <div class="card-body">
+                <div class="story-meta">
+                  <span class="badge bg-primary-subtle text-dark text-uppercase">Tech</span>
+                  <small>Oct 27, 2024 · 5 min read</small>
                 </div>
-                <div class="card-image">
-                    <img src="../assets/images/safetyblog.jpeg" alt="Post Thumbnail 1">
+                <h3 class="card-title h4">The cinema-grade cabin of BMW’s new i7</h3>
+                <p class="card-text text-white-50">We explore the 31-inch Theater Screen and the software that brings streamers on board.</p>
+                <a href="#" class="stretched-link text-decoration-none fw-semibold">Watch the experience</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-5 latest-insights">
+      <div class="container">
+        <div class="d-flex flex-wrap justify-content-between align-items-center mb-4">
+          <h2 class="section-title mb-3 mb-lg-0">Latest Insights</h2>
+          <a href="#" class="text-warning text-decoration-none fw-semibold">See archive →</a>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <article class="card insight-card h-100">
+              <div class="ratio ratio-16x9">
+                <img src="../assets/images/fuelblog.jpeg" alt="Fuel tips" class="img-fluid">
+              </div>
+              <div class="card-body">
+                <span class="badge bg-dark text-warning mb-2">Ownership</span>
+                <h3 class="h5">7 fuel-saving rituals every enthusiast swears by</h3>
+                <p class="text-white-50 mb-0">Simple tweaks that preserve both performance and range on your weekend drives.</p>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-4">
+            <article class="card insight-card h-100">
+              <div class="ratio ratio-16x9">
+                <img src="../assets/images/safetyblog.jpeg" alt="Safety briefing" class="img-fluid">
+              </div>
+              <div class="card-body">
+                <span class="badge bg-dark text-warning mb-2">Safety</span>
+                <h3 class="h5">Roadcraft 2.0: ADAS features you should actually keep on</h3>
+                <p class="text-white-50 mb-0">We decode the driver-assist alphabet soup and highlight what truly improves awareness.</p>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-4">
+            <article class="card insight-card h-100">
+              <div class="ratio ratio-16x9">
+                <img src="../assets/images/rollsblog.jpeg" alt="Phantom detail" class="img-fluid">
+              </div>
+              <div class="card-body">
+                <span class="badge bg-dark text-warning mb-2">Craft</span>
+                <h3 class="h5">Coach doors, curated woods, and 600 hours of hand finishing</h3>
+                <p class="text-white-50 mb-0">A behind-the-scenes look at how bespoke commissions come to life in Goodwood.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-5 feature-highlight">
+      <div class="container">
+        <div class="row g-4 align-items-center">
+          <div class="col-lg-6">
+            <img src="../assets/images/mercedezblog1.jpeg" alt="Studio lighting" class="img-fluid rounded-4 shadow">
+          </div>
+          <div class="col-lg-6">
+            <p class="text-uppercase small text-warning mb-2">Deep Dive</p>
+            <h2 class="section-title">How lighting designers choreograph emotion</h2>
+            <p class="text-white-50 lead mb-4">From animated welcome sequences to adaptive ambient hues, light is now the most expressive material in modern cabins. We spoke with the teams translating brand DNA into lumens.</p>
+            <ul class="list-unstyled text-white-50 mb-4">
+              <li class="mb-2"><i class="fas fa-circle text-warning me-2 small"></i>Biometric-based ambient presets coming to market in 2025</li>
+              <li class="mb-2"><i class="fas fa-circle text-warning me-2 small"></i>Sustainable crystal panels replacing chrome accents</li>
+              <li><i class="fas fa-circle text-warning me-2 small"></i>Why RGB needs storytelling to feel premium</li>
+            </ul>
+            <a href="#" class="btn btn-outline-warning rounded-pill px-4">Read the full interview</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-5 newsletter">
+      <div class="container">
+        <div class="newsletter-card p-4 p-lg-5 rounded-4">
+          <div class="row align-items-center g-4">
+            <div class="col-lg-6">
+              <p class="text-uppercase small text-warning mb-2">Newsletter</p>
+              <h3 class="section-title mb-3">The Garage Wire</h3>
+              <p class="text-white-50 mb-0">A curated inbox drop of concept reveals, track tests, and ownership wisdom. Delivered once a week.</p>
+            </div>
+            <div class="col-lg-6">
+              <form class="row g-2 g-sm-3">
+                <div class="col-12 col-sm-7">
+                  <label class="visually-hidden" for="newsletterEmail">Email</label>
+                  <input type="email" class="form-control form-control-lg bg-dark border-0 text-white" id="newsletterEmail" placeholder="Email address">
                 </div>
-            </div>
-        </div>
-    </section>
-    <section class="featured-posts">
-        <div class="container">
-          <div class="post">
-            <div class="content">
-                <h1 class="title">ROLLS ROYCE PHANTOM III</h1>
-                <p class="descripption">An untameable legend. An icon for icons. Phantom Series II exists alone at the apex of luxury. Its unprecedented design is an evolution in mastery — invigorating the mavericks who command its splendour.Inimitable in style, the embodiment of confidence, Phantom Series II boldly defines new standards of excellence.Inimitable in style, the embodiment of confidence, Phantom Series II boldly defines new standards of excellence.</p>
-                <p class="lead mb-0"><a href="#" class="text-white fw-bold">Continue reading...</a></p>
+                <div class="col-12 col-sm-5">
+                  <button type="submit" class="btn btn-warning w-100 btn-lg rounded-pill">Subscribe</button>
+                </div>
+              </form>
             </div>
           </div>
         </div>
-      </section>
-    
-    <section class="blog-post-with-thumbnail">
-        <div class="container">
-          <div class="post">
-            <h2>The Mercedes‑Maybach S‑Class.</h2>
-            <p>Excellent comfort and ultimate luxury – especially in the rear – are the top-most priority. Innovative details and exquisite materials make the Mercedes‑Maybach S‑Class a refuge that offers the brand’s hallmark experience of luxury.The new Mercedes‑Maybach S‑Class is also radiant from within. Thanks to the selection of the most exquisite materials and inviting seat variants, in conjunction with the orchestration of innovative technology and high-resolution screens.</p>
-          </div>
-          <div class="thumbnail">
-            <img src="../assets/images/mercedezblog.jpeg" alt="Post Thumbnail">
-          </div>
-        </div>
+      </div>
     </section>
-    
-    <section class="blog-post-with-thumbnail reverse">
-        <div class="container">
-          <div class="thumbnail">
-            <img src="../assets/images/bmwblog.jpeg" alt="Post Thumbnail">
+
+    <section class="py-5 author-spotlight">
+      <div class="container">
+        <div class="d-flex flex-wrap justify-content-between align-items-center mb-4">
+          <h2 class="section-title mb-3 mb-lg-0">Author Spotlight</h2>
+          <a href="#" class="text-warning text-decoration-none fw-semibold">Meet the full team</a>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <article class="author-card h-100 text-center p-4 rounded-4">
+              <img src="../assets/images/avatar1.jpg" alt="Samantha Reed" class="rounded-circle mb-3">
+              <h4 class="mb-1">Samantha Reed</h4>
+              <p class="text-warning small text-uppercase">Vintage Specialist</p>
+              <p class="text-white-50 mb-0">Writes about restoration artistry and the collectors keeping analog legends alive.</p>
+            </article>
           </div>
-          <div class="post">
-            <h2>THE BMW 7 SERIES SEDAN</h2>
-            <p>The only vehicle that meets you on your level – and takes you where you want to be. Experience the latest editions of BMW's flagship luxury sedan: testaments to greatness in all things.The seat of power is wherever you choose – and the 2023 BMW 7 Series Sedans are the perfect environment, with a combination of luxurious features and precision engineering.</p>
+          <div class="col-md-4">
+            <article class="author-card h-100 text-center p-4 rounded-4">
+              <img src="../assets/images/avatar2.jpeg" alt="Alex Martinez" class="rounded-circle mb-3">
+              <h4 class="mb-1">Alex Martinez</h4>
+              <p class="text-warning small text-uppercase">Tech Editor</p>
+              <p class="text-white-50 mb-0">Covers EV platforms, autonomy breakthroughs, and the software shaping cockpit UX.</p>
+            </article>
+          </div>
+          <div class="col-md-4">
+            <article class="author-card h-100 text-center p-4 rounded-4">
+              <img src="../assets/images/avatar3.jpeg" alt="Jennifer Thompson" class="rounded-circle mb-3">
+              <h4 class="mb-1">Jennifer Thompson</h4>
+              <p class="text-warning small text-uppercase">Motorsport Analyst</p>
+              <p class="text-white-50 mb-0">Breaks down strategy from WEC to F1 and what track innovation means for road cars.</p>
+            </article>
           </div>
         </div>
+      </div>
     </section>
-    <section class="authors-profile">
-        <div class="container">
-          <div class="author">
-            <img src="../assets/images/avatar1.jpg" alt="Author 1">
-            <h4>Samantha Reed</h4>
-            <p>Samantha Reed is a passionate automotive enthusiast and writer with a deep love for classic cars. With over a decade of experience in the industry, Samantha has written extensively about vintage car restoration, automotive history, and the art of car customization.</p>
-          </div>
-          <div class="author">
-            <img src="../assets/images/avatar2.jpeg" alt="Author 2">
-            <h4>Alex Martinez</h4>
-            <p>Alex Martinez is an automotive journalist and technology enthusiast. With a keen interest in the intersection of cars and technology, Alex specializes in writing about electric vehicles, autonomous driving, and the latest advancements in automotive innovation.</p>
-          </div>
-          <div class="author">
-            <img src="../assets/images/avatar3.jpeg" alt="Author 3">
-            <h4>Jennifer Thompson</h4>
-            <p>Jennifer Thompson is a seasoned automotive journalist and racing enthusiast. With a lifelong passion for high-performance cars, Jennifer has covered numerous motorsports events, including Formula 1 races and endurance challenges.</p>
-          </div>
-        </div>
-    </section>
-    
-    
-    <footer>
-        <div class="footer-content">
-            <h3>Follow Us</h3>
-            <div class="social-icons">
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-facebook"></i></a>
-                <a href="#"><i class="fab fa-youtube"></i></a>
-                <a href="#"><i class="fab fa-tiktok"></i></a>
-            </div>
-        </div>
-        <p>&copy; 2023 Car World. All rights reserved.</p>
-    </footer>
+  </main>
+
+  <footer class="py-5 border-top border-dark">
+    <div class="container text-center text-white-50">
+      <h3 class="text-white mb-3">Follow Us</h3>
+      <div class="d-flex justify-content-center gap-3 mb-3 social-icons">
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+        <a href="#"><i class="fab fa-tiktok"></i></a>
+      </div>
+      <p class="mb-0">&copy; 2023 BBMotors. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
-    

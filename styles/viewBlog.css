@@ -1,270 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --brand-dark: #030303;
+    --brand-mid: #121212;
+    --brand-card: #1c1c1c;
+    --brand-border: rgba(255, 255, 255, 0.08);
+    --brand-gold: #d9a441;
+}
+
 * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
 }
 
 body {
-    background-color: black;
-    height: 100dvh;
+    background-color: var(--brand-dark);
+    color: #f4f4f5;
+    font-family: 'Poppins', sans-serif;
 }
 
-header {
-    background-color: black;
-    box-shadow: 0 0 36px 0;
-    backdrop-filter: blur(3px);
+.navbar.custom-nav {
+    background-color: rgba(0, 0, 0, 0.85);
+    border-bottom: 1px solid var(--brand-border);
+    backdrop-filter: blur(8px);
 }
 
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 80%;
-    margin: auto;
-    padding: 1.2rem 0rem;
+.navbar-brand {
+    color: var(--brand-gold) !important;
+    letter-spacing: 1px;
 }
 
-.logo {
-    font-size: 1.3rem;
-    font-weight: 800;
+.nav-link {
+    font-weight: 500;
+    color: #c7cad1 !important;
+    margin-right: 0.5rem;
 }
 
-.logo a {
+.nav-link.active,
+.nav-link:hover {
+    color: #ffffff !important;
+}
+
+.hero-banner {
+    position: relative;
+    padding: 5rem 0;
+    background: linear-gradient(120deg, rgba(4, 4, 4, 0.85), rgba(0, 0, 0, 0.45)),
+        url(../assets/images/banner.jpg) center/cover no-repeat;
+    border-bottom: 1px solid var(--brand-border);
+}
+
+.section-title {
+    font-weight: 600;
     color: #fff;
-    text-decoration: none;
 }
 
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    padding: 0;
-    background-color: transparent;
+.story-card,
+.insight-card,
+.author-card {
+    background-color: var(--brand-card);
+    border: 1px solid var(--brand-border);
+    color: #fff;
+    border-radius: 1.25rem;
     overflow: hidden;
 }
 
-li {
-    padding: 0rem 1.1rem;
-    float: left;
-}
-
-li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 1rem;
-    font-weight: 600;
-    letter-spacing: .7px;
-}
-
-li a:hover {
-    color: #91b2ff;
-    transition: all .3s ease-in-out
-}
-
-.button {
-    display: flex;
-    gap: 1rem;
-}
-
-.button button {
-    font-weight: 500;
-    color: #fff;
-    border: 1px solid #fff;
-    background-color: transparent;
-    padding: .5rem 1rem;
-    border-radius: 20%;
-    cursor: pointer;
-}
-
-.button button:hover {
-    background-color: #fff;
-    color: #152939;
-    transition: all .3s ease-in-out;
-}
-.banner {
-    background-color: #333;
-    color: #fff;
-    padding: 250px;
-    text-align: center;
-    background-image: url(../assets/images/banner.jpg);
-  }
-/* Featured posts styles */
-.featured-posts {
-    padding: 20px;
-    margin-bottom: 20px;
-    background-image:url(../assets/images/rollsblog.jpeg)  ;
-    height:500px;
-    vertical-align: middle;
-  }
-
-  
-  .featured-posts .post {
-    margin-bottom: 20px;
-  }
-  
-  .featured-posts img {
-    width: 100%;
-  }
-  
-  .featured-posts h2 {
-    font-size: 20px;
-    margin-bottom: 10px;
-    padding-top: 80px;
-  }
-  
-  .featured-posts p {
-    margin-bottom: 10px;
-  }
-  
-  .continue-reading {
-    display: inline-block;
-    padding: 5px 10px;
-    background-color: #333;
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  /* Secondary featured posts styles */
-.secondary-featured-posts .container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content:  space-around;
-    padding-top: 60px;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-bottom: 60px;
-}
-
-.secondary-featured-posts .card {
-    flex-basis: calc(50% - 10px);
-    margin-bottom: 20px;
-    display: flex;
-    align-items: center;
-    padding-left: 2px;
-    border-radius: 30px;
-    background: #212121;
-    color: #fff;
-    box-shadow: 15px 15px 30px rgb(25, 25, 25),
-                -15px -15px 30px rgb(60, 60, 60);
-}
-
-.secondary-featured-posts .card img {
-    width: 75%;
-    margin-bottom: 10px;
-    margin-left: 20px;
-    justify-content: center;
-}
-
-.secondary-featured-posts .card-content {
-    margin-bottom: 10px;
-    float: left;
-    margin-right: 10px;
-    color: #fff;
-    vertical-align: bottom;
-    text-align: center;
-    
-}
-
-.secondary-featured-posts .card h3 {
-    font-size: 18px;
-    margin-bottom: 10px;
-    color: goldenrod;
-}
-.secondary-featured-posts .card h4 {
-    font-size: 18px;
-    margin-bottom: 10px;
-    color: blue;
-}
-  
-/* Authors profile styles */
-.authors-profile {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-}
-  
-.container {
-    display: flex;
-    flex-wrap: nowrap;
-}
-  
-.author {
-    flex: 1;
-    margin: 0 10px;
-    text-align: center;
-}
-  
-.author img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
+.story-card img,
+.insight-card img {
     object-fit: cover;
-}
-  
-.author h4 {
-    margin-top: 10px;
-    color: goldenrod;
-}
-  
-.author p {
-    margin-top: 5px;
-    color: #bbb;
-}
-  
-/* Blog post with thumbnail styles */
-.blog-post-with-thumbnail {
-    
-  padding: 20px;
-  margin-bottom: 20px;
-  border-top: 1px solid gray;
-  border-bottom: 1px solid gray;
-  color: #fff;
-  display: flex;
-  align-items: center;
-  
-}
-  
-.blog-post-with-thumbnail.reverse {
-    flex-direction: row-reverse;
-}
-  
-.blog-post-with-thumbnail .post,
-  .blog-post-with-thumbnail .thumbnail {
-    width: 50%;
-    flex: 0 0 auto; /* Prevent thumbnail from growing */
-  margin-right: 20px; /* Adjust spacing */
-  flex: 1 1 auto; /* Allow post content to grow */
-}
-  
-.blog-post-with-thumbnail img {
     width: 100%;
-}
-  
-.blog-post-with-thumbnail h2 {
-    font-size: 20px;
-    margin-bottom: 10px;
-    margin: 0; /* Remove default margins */
-}
-  
-
-footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
+    height: 100%;
+    transition: transform 0.5s ease;
 }
 
-.footer-content {
-    margin-bottom: 20px;
+.story-card:hover img,
+.insight-card:hover img {
+    transform: scale(1.05);
+}
+
+.story-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.8rem;
+    color: #b3b7c2;
+    font-size: 0.85rem;
+}
+
+.latest-insights {
+    background: radial-gradient(circle at top, rgba(255, 255, 255, 0.03), transparent);
+    border-top: 1px solid var(--brand-border);
+    border-bottom: 1px solid var(--brand-border);
+}
+
+.feature-highlight ul {
+    padding-left: 0;
+}
+
+.feature-highlight li {
+    list-style: none;
+}
+
+.newsletter-card {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.05), transparent);
+    border: 1px solid var(--brand-border);
+}
+
+.newsletter-card .form-control {
+    border-radius: 999px;
+    padding: 0.85rem 1.25rem;
+}
+
+.newsletter-card .form-control::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.author-card img {
+    width: 96px;
+    height: 96px;
+    object-fit: cover;
+    border: 3px solid var(--brand-border);
+}
+
+.author-card {
+    border-radius: 1.5rem;
+    border: 1px solid var(--brand-border);
+    background: rgba(255, 255, 255, 0.02);
 }
 
 .social-icons a {
     color: #fff;
-    font-size: 24px;
-    margin-right: 10px;
+    font-size: 1.4rem;
+    transition: color 0.3s ease;
 }
 
 .social-icons a:hover {
-    color: #bbb;
+    color: var(--brand-gold);
+}
+
+footer {
+    background-color: var(--brand-mid);
+}
+
+@media (max-width: 992px) {
+    .story-card.flex-lg-row {
+        flex-direction: column;
+    }
 }
