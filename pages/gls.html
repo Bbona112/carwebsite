@@ -1,71 +1,215 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet"  href="../styles/gls.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-  <title>Car Website</title>
+  <title>Mercedes GLS 63 - BBM Motors</title>
   
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="../styles/vehicle.css">
 </head>
 <body>
-    <nav>
-        <div class="logo">
-            <a href="#">BBM.</a>
-        </div>
-        <ul>
-            <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="listings.html">Listings</a></li>
-            <li><a href="viewBlog.html">Blog</a></li>
-            <li><a href="contactUs.html">Contact</a></li>
-        </ul>
-        <div class="button">
-            <button>Sign Up</button>
-            <button>Log In</button>
-        </div>
-    </nav>
-    <div class="banner">
-    </div>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
-        <h1 style="color: goldenrod;">Mercedes S-Class S550</h1>
-        
-        <div class="car-gallery">
-          <!-- Gallery images -->
-          <img src="../assets/images/glsback.jpeg" alt="Front View">
-          <img src="../assets/images/glsside.jpeg" alt="Side View">
-          <img src="../assets/images/glsdrone.jpeg" alt="Rear View">
-          <img src="../assets/images/glsseat.jpeg" alt="Rear View">
-        </div>
-        
-        <div class="car-specifications">
-          <h2>Specifications</h2>
-          <ul>
-            <li><i class="fas fa-tachometer-alt"></i> Engine: 4.0L V8</li>
-            <li><i class="fas fa-cogs"></i> Transmission: 9-Speed Automatic</li>
-            <li><i class="fas fa-horse-head"></i> Horsepower: 603 hp</li>
-            <li><i class="fas fa-road"></i> Fuel Efficiency: 15 MPG City / 19 MPG Highway</li>
-            <li><i class="fas fa-cog"></i> Drive Type: All-Wheel Drive</li>
-            <li><i class="fas fa-couch"></i> Seating Capacity: 7</li>
-          </ul>
-        </div>
-        
-        <div class="order-button">
-          <a href="#" class="btn">Order Now</a>
+      <a class="navbar-brand fw-bold" href="index.html">BBM.</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link active" href="listings.html">Listings</a></li>
+          <li class="nav-item"><a class="nav-link" href="viewBlog.html">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="contactUs.html">Contact</a></li>
+        </ul>
+        <div class="d-flex gap-2">
+          <button class="btn btn-outline-light btn-sm">Sign Up</button>
+          <button class="btn btn-outline-light btn-sm">Log In</button>
         </div>
       </div>
-      <footer>
-        <div class="footer-content">
-            <h3>Follow Us</h3>
-            <div class="social-icons">
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-facebook"></i></a>
-                <a href="#"><i class="fab fa-youtube"></i></a>
-                <a href="#"><i class="fab fa-tiktok"></i></a>
-            </div>
+    </div>
+  </nav>
+
+  <!-- Hero Banner -->
+  <div class="hero-banner" style="background-image: url('../assets/images/glsside.jpeg');">
+    <div class="hero-overlay">
+      <div class="container">
+        <h1 class="hero-title">Mercedes GLS 63</h1>
+        <p class="hero-subtitle">Performance Luxury SUV</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <div class="container my-5">
+    <!-- Back Button -->
+    <div class="mb-4">
+      <a href="listings.html" class="btn-back">
+        <i class="fas fa-arrow-left me-2"></i>Back to Listings
+      </a>
+    </div>
+
+    <!-- Image Carousel -->
+    <div class="carousel-container">
+      <div id="vehicleCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#vehicleCarousel" data-bs-slide-to="0" class="active"></button>
+          <button type="button" data-bs-target="#vehicleCarousel" data-bs-slide-to="1"></button>
+          <button type="button" data-bs-target="#vehicleCarousel" data-bs-slide-to="2"></button>
+          <button type="button" data-bs-target="#vehicleCarousel" data-bs-slide-to="3"></button>
+          <button type="button" data-bs-target="#vehicleCarousel" data-bs-slide-to="4"></button>
         </div>
-        <p>&copy; 2023 Car World. All rights reserved.</p>
-    </footer>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="../assets/images/glsside.jpeg" class="d-block w-100" alt="Side View">
+          </div>
+          <div class="carousel-item">
+            <img src="../assets/images/glsback.jpeg" class="d-block w-100" alt="Rear View">
+          </div>
+          <div class="carousel-item">
+            <img src="../assets/images/glsdrone.jpeg" class="d-block w-100" alt="Drone View">
+          </div>
+          <div class="carousel-item">
+            <img src="../assets/images/glsseat.jpeg" class="d-block w-100" alt="Seats">
+          </div>
+          <div class="carousel-item">
+            <img src="../assets/images/glstop.jpeg" class="d-block w-100" alt="Top View">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#vehicleCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#vehicleCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Thumbnail Gallery -->
+    <div class="thumbnail-gallery">
+      <div class="row g-2">
+        <div class="col-6 col-md-2">
+          <div class="thumbnail-item active" data-slide="0">
+            <img src="../assets/images/glsside.jpeg" alt="Side View">
+          </div>
+        </div>
+        <div class="col-6 col-md-2">
+          <div class="thumbnail-item" data-slide="1">
+            <img src="../assets/images/glsback.jpeg" alt="Rear View">
+          </div>
+        </div>
+        <div class="col-6 col-md-2">
+          <div class="thumbnail-item" data-slide="2">
+            <img src="../assets/images/glsdrone.jpeg" alt="Drone View">
+          </div>
+        </div>
+        <div class="col-6 col-md-2">
+          <div class="thumbnail-item" data-slide="3">
+            <img src="../assets/images/glsseat.jpeg" alt="Seats">
+          </div>
+        </div>
+        <div class="col-6 col-md-2">
+          <div class="thumbnail-item" data-slide="4">
+            <img src="../assets/images/glstop.jpeg" alt="Top View">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Specifications -->
+    <div class="specs-section">
+      <h2 class="specs-title">Specifications</h2>
+      <div class="specs-grid">
+        <div class="spec-item">
+          <i class="fas fa-tachometer-alt"></i>
+          <strong>Engine</strong>
+          <span>4.0L V8</span>
+        </div>
+        <div class="spec-item">
+          <i class="fas fa-cogs"></i>
+          <strong>Transmission</strong>
+          <span>9-Speed Automatic</span>
+        </div>
+        <div class="spec-item">
+          <i class="fas fa-horse-head"></i>
+          <strong>Horsepower</strong>
+          <span>603 hp</span>
+        </div>
+        <div class="spec-item">
+          <i class="fas fa-road"></i>
+          <strong>Fuel Efficiency</strong>
+          <span>15 MPG City / 19 MPG Highway</span>
+        </div>
+        <div class="spec-item">
+          <i class="fas fa-cog"></i>
+          <strong>Drive Type</strong>
+          <span>All-Wheel Drive</span>
+        </div>
+        <div class="spec-item">
+          <i class="fas fa-couch"></i>
+          <strong>Seating Capacity</strong>
+          <span>7</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Action Buttons -->
+    <div class="action-section">
+      <a href="#" class="btn-order">
+        <span><i class="fas fa-shopping-cart me-2"></i>Order Now</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-light py-4">
+    <div class="container">
+      <div class="text-center mb-3">
+        <h5>Follow Us</h5>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-twitter fa-lg"></i></a>
+          <a href="#"><i class="fab fa-instagram fa-lg"></i></a>
+          <a href="#"><i class="fab fa-facebook fa-lg"></i></a>
+          <a href="#"><i class="fab fa-youtube fa-lg"></i></a>
+          <a href="#"><i class="fab fa-tiktok fa-lg"></i></a>
+        </div>
+      </div>
+      <p class="text-center mb-0">&copy; 2023 BBMotors. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5 JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JS for thumbnail navigation -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const carousel = new bootstrap.Carousel(document.getElementById('vehicleCarousel'));
+      const thumbnails = document.querySelectorAll('.thumbnail-item');
+      
+      thumbnails.forEach((thumb, index) => {
+        thumb.addEventListener('click', function() {
+          carousel.to(index);
+          thumbnails.forEach(t => t.classList.remove('active'));
+          this.classList.add('active');
+        });
+      });
+
+      document.getElementById('vehicleCarousel').addEventListener('slid.bs.carousel', function(e) {
+        const activeIndex = e.to;
+        thumbnails.forEach(t => t.classList.remove('active'));
+        if (thumbnails[activeIndex]) {
+          thumbnails[activeIndex].classList.add('active');
+        }
+      });
+    });
+  </script>
 </body>
 </html>
