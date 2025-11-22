@@ -1,178 +1,212 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Car Listing</title>
-  <link rel="stylesheet"  href="../styles/listing.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Car Listing - BBM Motors</title>
+  
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="../styles/listing.css">
 </head>
 <body>
-  <nav>
-    <div class="logo">
-      <a href="#">BBM.</a>
-    </div>
-    <ul>
-      <li><a href="index.html" class="active">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="listings.html">Listings</a></li>
-      <li><a href="viewBlog.html">Blog</a></li>
-      <li><a href="contactUs.html">Contact</a></li>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">BBM.</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link active" href="listings.html">Listings</a></li>
+          <li class="nav-item"><a class="nav-link" href="viewBlog.html">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="contactUs.html">Contact</a></li>
         </ul>
-        <div class="button">
-            <button>Sign Up</button>
-            <button>Log In</button>
+        <div class="d-flex gap-2">
+          <button class="btn btn-outline-light btn-sm">Sign Up</button>
+          <button class="btn btn-outline-light btn-sm">Log In</button>
         </div>
-    </nav>
-    <div class="banner">
-      <h1>Listings</h1>
-  </div>
-  
+      </div>
+    </div>
+  </nav>
 
-  <div class="car-list">
-    <div class="car-card">
-      <img src="../assets/images/s550side.jpeg" alt="Car 1">
-      <h2>Sedan</h2>
-      <ul>
-        <li><strong>Make:</strong> Mercedez Benz S550</li>
-        <li><strong>Model:</strong> Model 1</li>
-        <li><strong>Year:</strong> 2022</li>
-        <li><strong>Price:</strong> $30,000</li>
-      </ul>
-      <button class="btn-more"><span><a href="sClass.html">More info</a></span></button>
+  <!-- Banner -->
+  <div class="banner-section">
+    <div class="banner-overlay">
+      <div class="container">
+        <h1 class="banner-title">Premium Car Listings</h1>
+        <p class="banner-subtitle">Discover Your Dream Vehicle</p>
+      </div>
     </div>
-    <div class="car-card">
-        <img src="../assets/images/g550side.jpeg" alt="Car 1">
-        <h2>Suv</h2>
-        <ul>
-          <li><strong>Make:</strong> Mercedez G Benz 550</li>
-          <li><strong>Model:</strong> Model 1</li>
-          <li><strong>Year:</strong> 2022</li>
-          <li><strong>Price:</strong> $30,000</li>
-        </ul>
-        <button class="btn-more"><span><a href="gClass.html">More info</a></span></button>
-      </div>
-      <div class="car-card">
-        <img src="../assets/images/spurside.jpeg" alt="Car 1">
-        <h2>Sedan</h2>
-        <ul>
-          <li><strong>Make:</strong> Bentley Flying Spur</li>
-          <li><strong>Model:</strong> Model 1</li>
-          <li><strong>Year:</strong> 2022</li>
-          <li><strong>Price:</strong> $30,000</li>
-        </ul>
-        <button class="btn-more"><span><a href="bentely.html">More info</a></span></button>
-      </div>
-      <div class="car-card">
-        <img src="../assets/images/tundra side.jpeg" alt="Car 1">
-        <h2>Pick-up</h2>
-        <ul>
-          <li><strong>Make:</strong> Toyota Tundra</li>
-          <li><strong>Model:</strong> Model 1</li>
-          <li><strong>Year:</strong> 2022</li>
-          <li><strong>Price:</strong> $30,000</li>
-        </ul>
-        <button class="btn-more"><span><a href="tundra.html">More info</a></span></button>
-      </div>
-      <div class="car-card">
-        <img src="../assets/images/lcside.jpeg" alt="Car 1">
-        <h2>Suv</h2>
-        <ul>
-          <li><strong>Make:</strong> Land Cruiser 300</li>
-          <li><strong>Model:</strong> Model 1</li>
-          <li><strong>Year:</strong> 2022</li>
-          <li><strong>Price:</strong> $30,000</li>
-        </ul>
-        <button class="btn-more"><span><a href="lc300.html">More info</a></span></button>
-      </div>
-      <div class="car-card">
-        <img src="../assets/images/570side.jpeg" alt="Car 1">
-        <h2>Suv</h2>
-        <ul>
-          <li><strong>Make:</strong> Lexux LX570</li>
-          <li><strong>Model:</strong> Model 1</li>
-          <li><strong>Year:</strong> 2022</li>
-          <li><strong>Price:</strong> $30,000</li>
-        </ul>
-        <button class="btn-more"><span><a href="lexus.html">More info</a></span></button>
-      </div>
-      <div class="car-card">
-        <img src="../assets/images/bmwside.jpeg" alt="Car 1">
-        <h2>Sedan</h2>
-        <ul>
-          <li><strong>Make:</strong> BMW i7 Series</li>
-          <li><strong>Model:</strong> Model 1</li>
-          <li><strong>Year:</strong> 2022</li>
-          <li><strong>Price:</strong> $30,000</li>
-        </ul>
-        <button class="btn-more"><span><a href="i7.html">More info</a></span></button>
-      </div>
-      <div class="car-card">
-        <img src="../assets/images/phside.jpeg" alt="Car 1">
-        <h2>Sedan</h2>
-        <ul>
-          <li><strong>Make:</strong> Rolce Royce Phantom III</li>
-          <li><strong>Model:</strong> Model 1</li>
-          <li><strong>Year:</strong> 2022</li>
-          <li><strong>Price:</strong> $30,000</li>
-        </ul>
-        <button class="btn-more"><span><a href="phantom.html">More info</a></span></button>
-      </div>
-      <div class="car-card">
-        <img src="../assets/images/cullinanside.jpeg" alt="Car 1">
-        <h2>Car 1</h2>
-        <ul>
-          <li><strong>Make:</strong> Rolls Royce Cullinan</li>
-          <li><strong>Model:</strong> Model 1</li>
-          <li><strong>Year:</strong> 2022</li>
-          <li><strong>Price:</strong> $30,000</li>
-        </ul>
-        <button class="btn-more"><span><a href="cullian.html">More info</a></span></button>
-      </div>
-      <div class="car-card">
-        <img src="../assets/images/vside.jpeg" alt="Car 1">
-        <h2>Mid-Suv</h2>
-        <ul>
-          <li><strong>Make:</strong> Range Rover Velar</li>
-          <li><strong>Model:</strong> Model 1</li>
-          <li><strong>Year:</strong> 2022</li>
-          <li><strong>Price:</strong> $30,000</li>
-        </ul>
-        <button class="btn-more"><span><a href="velar.html">More info</a></span></button>
-      </div>
-      <div class="car-card">
-        <img src="../assets/images/rside.jpeg" alt="Car 1">
-        <h2>Suv</h2>
-        <ul>
-          <li><strong>Make:</strong> Range Rover Vogue</li>
-          <li><strong>Model:</strong> Model 1</li>
-          <li><strong>Year:</strong> 2022</li>
-          <li><strong>Price:</strong> $30,000</li>
-        </ul>
-        <button class="btn-more"><span><a href="autobiography.html">More info</a></span></button>
-      </div>
-      <div class="car-card">
-        <img src="../assets/images/glsside.jpeg" alt="Car 1">
-        <h2>Suv</h2>
-        <ul>
-          <li><strong>Make:</strong> Mercedez Benz Gls 63</li>
-          <li><strong>Model:</strong> Model 1</li>
-          <li><strong>Year:</strong> 2022</li>
-          <li><strong>Price:</strong> $30,000</li>
-        </ul>
-        <button class="btn-more"><span><a href="gls.html">More info</a></span></button>
-      </div>
   </div>
-  <footer>
-    <div class="footer-content">
-        <h3>Follow Us</h3>
-        <div class="social-icons">
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-facebook"></i></a>
-            <a href="#"><i class="fab fa-youtube"></i></a>
-            <a href="#"><i class="fab fa-tiktok"></i></a>
+
+  <!-- Main Content -->
+  <div class="container-fluid py-4 mt-5">
+    <div class="row">
+      <!-- Filter Sidebar -->
+      <div class="col-lg-3 col-md-4 mb-4">
+        <div class="filter-sidebar bg-dark text-light p-4 rounded shadow">
+          <div class="d-flex justify-content-between align-items-center mb-4">
+            <h4 class="mb-0"><i class="fas fa-filter me-2"></i>Filters</h4>
+            <button class="btn btn-sm btn-outline-light" id="clearFilters">
+              <i class="fas fa-times"></i> Clear
+            </button>
+          </div>
+
+          <!-- Search -->
+          <div class="mb-4">
+            <label class="form-label">Search</label>
+            <input type="text" class="form-control" id="searchInput" placeholder="Search cars...">
+          </div>
+
+          <!-- Make Filter -->
+          <div class="mb-4">
+            <label class="form-label">Make</label>
+            <select class="form-select" id="makeFilter">
+              <option value="">All Makes</option>
+              <option value="Mercedez Benz">Mercedes Benz</option>
+              <option value="Bentley">Bentley</option>
+              <option value="Toyota">Toyota</option>
+              <option value="Land Cruiser">Land Cruiser</option>
+              <option value="Lexux">Lexus</option>
+              <option value="BMW">BMW</option>
+              <option value="Rolce Royce">Rolls Royce</option>
+              <option value="Rolls Royce">Rolls Royce</option>
+              <option value="Range Rover">Range Rover</option>
+            </select>
+          </div>
+
+          <!-- Type Filter -->
+          <div class="mb-4">
+            <label class="form-label">Vehicle Type</label>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="Sedan" id="typeSedan">
+              <label class="form-check-label" for="typeSedan">Sedan</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="Suv" id="typeSuv">
+              <label class="form-check-label" for="typeSuv">SUV</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="Pick-up" id="typePickup">
+              <label class="form-check-label" for="typePickup">Pick-up</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="Mid-Suv" id="typeMidSuv">
+              <label class="form-check-label" for="typeMidSuv">Mid-SUV</label>
+            </div>
+          </div>
+
+          <!-- Year Range -->
+          <div class="mb-4">
+            <label class="form-label">Year Range</label>
+            <div class="row g-2">
+              <div class="col-6">
+                <input type="number" class="form-control" id="yearMin" placeholder="Min" min="2015" max="2024">
+              </div>
+              <div class="col-6">
+                <input type="number" class="form-control" id="yearMax" placeholder="Max" min="2015" max="2024">
+              </div>
+            </div>
+          </div>
+
+          <!-- Price Range -->
+          <div class="mb-4">
+            <label class="form-label">Price Range</label>
+            <div class="row g-2">
+              <div class="col-6">
+                <input type="number" class="form-control" id="priceMin" placeholder="Min $" min="0">
+              </div>
+              <div class="col-6">
+                <input type="number" class="form-control" id="priceMax" placeholder="Max $" min="0">
+              </div>
+            </div>
+            <div class="mt-2">
+              <input type="range" class="form-range" id="priceRange" min="0" max="200000" value="200000">
+              <small class="text-muted">Max: $<span id="priceRangeValue">200,000</span></small>
+            </div>
+          </div>
+
+          <!-- Results Count -->
+          <div class="mt-4 p-3 bg-secondary rounded">
+            <p class="mb-0 text-center">
+              <strong id="resultsCount">12</strong> cars found
+            </p>
+          </div>
         </div>
+      </div>
+
+      <!-- Car Listings -->
+      <div class="col-lg-9 col-md-8">
+        <!-- Toolbar -->
+        <div class="d-flex justify-content-between align-items-center mb-4 flex-wrap gap-3">
+          <div>
+            <h3 class="text-light mb-0">Available Cars</h3>
+            <small class="text-muted">Showing <span id="showingCount">12</span> results</small>
+          </div>
+          <div class="d-flex gap-2 align-items-center">
+            <label class="text-light me-2">Sort by:</label>
+            <select class="form-select form-select-sm" id="sortSelect" style="width: auto;">
+              <option value="default">Default</option>
+              <option value="price-asc">Price: Low to High</option>
+              <option value="price-desc">Price: High to Low</option>
+              <option value="year-asc">Year: Oldest First</option>
+              <option value="year-desc">Year: Newest First</option>
+              <option value="name-asc">Name: A to Z</option>
+              <option value="name-desc">Name: Z to A</option>
+            </select>
+            <div class="btn-group" role="group">
+              <button type="button" class="btn btn-outline-light btn-sm view-toggle active" data-view="grid">
+                <i class="fas fa-th"></i>
+              </button>
+              <button type="button" class="btn btn-outline-light btn-sm view-toggle" data-view="list">
+                <i class="fas fa-list"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Car Cards Grid -->
+        <div id="carListings" class="row g-4">
+          <!-- Car cards will be dynamically generated -->
+        </div>
+
+        <!-- Pagination -->
+        <nav aria-label="Page navigation" class="mt-5">
+          <ul class="pagination justify-content-center" id="pagination">
+            <!-- Pagination will be dynamically generated -->
+          </ul>
+        </nav>
+      </div>
     </div>
-    <p>&copy; 2023 BBMotors. All rights reserved.</p>
-</footer>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-light py-4 mt-5">
+    <div class="container">
+      <div class="text-center mb-3">
+        <h5>Follow Us</h5>
+        <div class="social-icons">
+          <a href="#" class="text-light me-3"><i class="fab fa-twitter fa-lg"></i></a>
+          <a href="#" class="text-light me-3"><i class="fab fa-instagram fa-lg"></i></a>
+          <a href="#" class="text-light me-3"><i class="fab fa-facebook fa-lg"></i></a>
+          <a href="#" class="text-light me-3"><i class="fab fa-youtube fa-lg"></i></a>
+          <a href="#" class="text-light"><i class="fab fa-tiktok fa-lg"></i></a>
+        </div>
+      </div>
+      <p class="text-center mb-0">&copy; 2023 BBMotors. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5 JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JS -->
+  <script src="../scripts/listings.js"></script>
 </body>
 </html>
