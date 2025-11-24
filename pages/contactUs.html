@@ -1,86 +1,292 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet"  href="../styles/contactUs.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-  <title>Car Website</title>
+  <title>Contact Us - BBM Motors</title>
   
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="../styles/contactUs.css">
 </head>
 <body>
-    <nav>
-        <div class="logo">
-            <a href="#">BBM.</a>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">BBM.</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="listings.html">Listings</a></li>
+          <li class="nav-item"><a class="nav-link" href="viewBlog.html">Blog</a></li>
+          <li class="nav-item"><a class="nav-link active" href="contactUs.html">Contact</a></li>
+        </ul>
+        <div class="d-flex gap-2">
+          <button class="btn btn-outline-light btn-sm">Sign Up</button>
+          <button class="btn btn-outline-light btn-sm">Log In</button>
         </div>
-        <ul>
-            <li><a href="index.html" class="active">Home</a></li>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Banner -->
+  <div class="hero-banner">
+    <div class="hero-overlay">
+      <div class="container">
+        <h1 class="hero-title">Contact Us</h1>
+        <p class="hero-subtitle">Get in touch with us for inquiries, orders, or any questions you may have</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact Information Cards -->
+  <section class="contact-info-section py-5">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-3 col-md-6">
+          <div class="info-card">
+            <div class="info-icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <h4>Address</h4>
+            <p>123 Luxury Car Boulevard<br>Premium District, City 12345<br>United States</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="info-card">
+            <div class="info-icon">
+              <i class="fas fa-phone"></i>
+            </div>
+            <h4>Phone</h4>
+            <p>+1 (555) 123-4567<br>+1 (555) 123-4568</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="info-card">
+            <div class="info-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <h4>Email</h4>
+            <p>info@bbmotors.com<br>sales@bbmotors.com</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="info-card">
+            <div class="info-icon">
+              <i class="fas fa-clock"></i>
+            </div>
+            <h4>Business Hours</h4>
+            <p>Mon - Fri: 9:00 AM - 7:00 PM<br>Sat - Sun: 10:00 AM - 6:00 PM</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Form Section -->
+  <section class="contact-form-section py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 mb-5 mb-lg-0">
+          <div class="form-image-wrapper">
+            <img src="../assets/images/rollsform.jpeg" alt="Contact" class="form-image img-fluid rounded">
+            <div class="form-overlay">
+              <h3>We're Here to Help</h3>
+              <p>Fill out the form and our team will get back to you within 24 hours</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="contact-form-wrapper">
+            <h2 class="form-title">Send Us a Message</h2>
+            <p class="form-subtitle">Have a question or want to place an order? We'd love to hear from you.</p>
+            <form class="contact-form" id="contactForm">
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <div class="form-floating">
+                    <input type="text" class="form-control" id="firstName" placeholder="First Name" required>
+                    <label for="firstName">First Name</label>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-floating">
+                    <input type="text" class="form-control" id="lastName" placeholder="Last Name" required>
+                    <label for="lastName">Last Name</label>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-floating">
+                    <input type="email" class="form-control" id="email" placeholder="Email Address" required>
+                    <label for="email">Email Address</label>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-floating">
+                    <input type="tel" class="form-control" id="phone" placeholder="Phone Number" required>
+                    <label for="phone">Phone Number</label>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-floating">
+                    <select class="form-select" id="subject" required>
+                      <option value="">Select a subject</option>
+                      <option value="general">General Inquiry</option>
+                      <option value="sales">Sales Question</option>
+                      <option value="service">Service Request</option>
+                      <option value="support">Customer Support</option>
+                      <option value="other">Other</option>
+                    </select>
+                    <label for="subject">Subject</label>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-floating">
+                    <textarea class="form-control" id="message" placeholder="Your Message" style="height: 120px" required></textarea>
+                    <label for="message">Your Message</label>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="btn btn-submit w-100">
+                    <span>Send Message</span>
+                    <i class="fas fa-paper-plane ms-2"></i>
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Map Section -->
+  <section class="map-section py-5">
+    <div class="container">
+      <div class="section-header text-center mb-5">
+        <h2 class="section-title">Find Us</h2>
+        <p class="section-subtitle">Visit our showroom and experience luxury firsthand</p>
+      </div>
+      <div class="map-wrapper">
+        <div class="map-placeholder">
+          <i class="fas fa-map-marked-alt"></i>
+          <p>Interactive Map</p>
+          <small>123 Luxury Car Boulevard, Premium District, City 12345</small>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Social Media Section -->
+  <section class="social-section py-5">
+    <div class="container">
+      <div class="social-content text-center">
+        <h2 class="social-title">Follow Us on Social Media</h2>
+        <p class="social-subtitle">Stay connected and get the latest updates</p>
+        <div class="social-icons-large">
+          <a href="#" class="social-link">
+            <i class="fab fa-twitter"></i>
+            <span>Twitter</span>
+          </a>
+          <a href="#" class="social-link">
+            <i class="fab fa-instagram"></i>
+            <span>Instagram</span>
+          </a>
+          <a href="#" class="social-link">
+            <i class="fab fa-facebook"></i>
+            <span>Facebook</span>
+          </a>
+          <a href="#" class="social-link">
+            <i class="fab fa-youtube"></i>
+            <span>YouTube</span>
+          </a>
+          <a href="#" class="social-link">
+            <i class="fab fa-tiktok"></i>
+            <span>TikTok</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-light py-5">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+          <h5 class="footer-title">BBM Motors</h5>
+          <p>Your trusted partner for premium automotive solutions. We bring you the finest selection of luxury vehicles with exceptional service.</p>
+        </div>
+        <div class="col-lg-2 col-md-6">
+          <h5 class="footer-title">Quick Links</h5>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="listings.html">Listings</a></li>
             <li><a href="viewBlog.html">Blog</a></li>
             <li><a href="contactUs.html">Contact</a></li>
-        </ul>
-        <div class="button">
-            <button>Sign Up</button>
-            <button>Log In</button>
+          </ul>
         </div>
-    </nav>
-    <div class="banner">
-        <h1>Contact US</h1>
-        <p>To place your orders or for more enquiries you can get in touch with us through the form below</p>
+        <div class="col-lg-3 col-md-6">
+          <h5 class="footer-title">Services</h5>
+          <ul class="footer-links">
+            <li><a href="#">Car Sales</a></li>
+            <li><a href="#">Car Rental</a></li>
+            <li><a href="#">Car Repair</a></li>
+            <li><a href="#">Car Insurance</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h5 class="footer-title">Follow Us</h5>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-twitter fa-lg"></i></a>
+            <a href="#"><i class="fab fa-instagram fa-lg"></i></a>
+            <a href="#"><i class="fab fa-facebook fa-lg"></i></a>
+            <a href="#"><i class="fab fa-youtube fa-lg"></i></a>
+            <a href="#"><i class="fab fa-tiktok fa-lg"></i></a>
+          </div>
+        </div>
+      </div>
+      <hr class="my-4" style="border-color: rgba(255,255,255,0.1);">
+      <div class="text-center">
+        <p class="mb-0">&copy; 2023 BBMotors. All rights reserved.</p>
+      </div>
     </div>
-    <section class="contact-details">
-        <img src="../assets/images/rollsform.jpeg" alt="Left Image" class="left-image">
-        <form class="form">
-    
-            <div class="flex">
-                <label>
-                    <input required="" placeholder="" type="text" class="input">
-                    <span>First name</span>
-                </label>
-        
-                <label>
-                    <input required="" placeholder="" type="text" class="input">
-                    <span>Last name</span>
-                </label>
-            </div>  
-                    
-            <label>
-                <input required="" placeholder="" type="email" class="input">
-                <span>Email</span>
-            </label> 
-                
-            <label>
-                <input required="" type="tel" placeholder="" class="input">
-                <span>Contact number</span>
-            </label>
-            <label>
-                <textarea required="" rows="3" placeholder="" class="input01"></textarea>
-                <span>Message</span>
-            </label>
-            
-            <button class="fancy" href="#">
-              <span class="top-key"></span>
-              <span class="text">submit</span>
-              <span class="bottom-key-1"></span>
-              <span class="bottom-key-2"></span>
-            </button>
-        </form>
-        <img src="../assets/images/mclarenform.jpeg" alt="Right Image" class="right-image">
-    </section>
-    
-    <footer>
-        <div class="footer-content">
-            <h3>Follow Us</h3>
-            <div class="social-icons">
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-facebook"></i></a>
-                <a href="#"><i class="fab fa-youtube"></i></a>
-                <a href="#"><i class="fab fa-tiktok"></i></a>
-            </div>
-        </div>
-        <p>&copy; 2023 BBMotors. All rights reserved.</p>
-    </footer>
+  </footer>
+
+  <!-- Bootstrap 5 JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JS -->
+  <script>
+    // Form submission handler
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      // Get form values
+      const formData = {
+        firstName: document.getElementById('firstName').value,
+        lastName: document.getElementById('lastName').value,
+        email: document.getElementById('email').value,
+        phone: document.getElementById('phone').value,
+        subject: document.getElementById('subject').value,
+        message: document.getElementById('message').value
+      };
+      
+      // Here you would typically send the data to a server
+      console.log('Form submitted:', formData);
+      
+      // Show success message (you can replace this with actual form submission)
+      alert('Thank you for your message! We will get back to you soon.');
+      
+      // Reset form
+      this.reset();
+    });
+  </script>
 </body>
 </html>
