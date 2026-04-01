@@ -29,8 +29,8 @@
           <li class="nav-item"><a class="nav-link" href="contactUs.html">Contact</a></li>
         </ul>
         <div class="d-flex gap-2">
-          <button class="btn btn-outline-light btn-sm">Sign Up</button>
-          <button class="btn btn-outline-light btn-sm">Log In</button>
+          <a href="signUp.html" class="btn btn-outline-light btn-sm px-3">Sign Up</a>
+          <a href="signIn.html" class="btn btn-light btn-sm px-3">Log In</a>
         </div>
       </div>
     </div>
@@ -47,11 +47,11 @@
   </div>
 
   <!-- Main Content -->
-  <div class="container-fluid py-4 mt-5">
+  <div class="container-fluid py-4 mt-5 listings-main">
     <div class="row">
       <!-- Filter Sidebar -->
       <div class="col-lg-3 col-md-4 mb-4">
-        <div class="filter-sidebar bg-dark text-light p-4 rounded shadow">
+        <div class="filter-sidebar text-light p-4 rounded shadow">
           <div class="d-flex justify-content-between align-items-center mb-4">
             <h4 class="mb-0"><i class="fas fa-filter me-2"></i>Filters</h4>
             <button class="btn btn-sm btn-outline-light" id="clearFilters">
@@ -134,7 +134,7 @@
           </div>
 
           <!-- Results Count -->
-          <div class="mt-4 p-3 bg-secondary rounded">
+          <div class="mt-4 p-3 filter-result-box rounded">
             <p class="mb-0 text-center">
               <strong id="resultsCount">12</strong> cars found
             </p>
@@ -143,7 +143,7 @@
       </div>
 
       <!-- Car Listings -->
-      <div class="col-lg-9 col-md-8">
+      <div class="col-lg-9 col-md-8 listings-content">
         <!-- Toolbar -->
         <div class="d-flex justify-content-between align-items-center mb-4 flex-wrap gap-3">
           <div>
