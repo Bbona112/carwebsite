@@ -200,12 +200,20 @@ body {
     overflow: hidden;
     height: 100%;
     transition: transform 0.25s ease, border-color 0.25s ease;
+    animation: revealUp 0.65s ease both;
 }
 
 .car-card:hover {
     transform: translateY(-6px);
     border-color: rgba(200, 169, 106, 0.58);
 }
+
+#carListings > div:nth-child(1) .car-card { animation-delay: 0.05s; }
+#carListings > div:nth-child(2) .car-card { animation-delay: 0.12s; }
+#carListings > div:nth-child(3) .car-card { animation-delay: 0.2s; }
+#carListings > div:nth-child(4) .car-card { animation-delay: 0.28s; }
+#carListings > div:nth-child(5) .car-card { animation-delay: 0.34s; }
+#carListings > div:nth-child(6) .car-card { animation-delay: 0.4s; }
 
 .card-img-wrapper {
     position: relative;
@@ -301,6 +309,17 @@ body {
 .pagination .page-item.disabled .page-link {
     background: #17181d;
     color: #666b75;
+}
+
+@keyframes revealUp {
+    from {
+        opacity: 0;
+        transform: translateY(16px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 /* Footer alignment */
